@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Tonium - Tony Mutisya's premium software engineering and creative technology brand. Full-stack developer, API architect, UI designer, and creative technologist." />
+  <title>Tonium | Tony Mutisya — Software Engineer & Creative Technologist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <div class="bg-orb orb-one"></div>
+  <div class="bg-orb orb-two"></div>
+
+  <header class="header" id="header">
+    <nav class="navbar container">
+      <a class="logo" href="#" aria-label="Tonium">
+        <svg class="logo-svg" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Periodic Table Element Style -->
+          <rect x="1" y="1" width="42" height="42" rx="8" fill="url(#gradient)" stroke="url(#gradientStroke)" stroke-width="1.5"/>
+          
+          <!-- Atomic nucleus -->
+          <circle cx="22" cy="22" r="4" fill="#5c3aff" opacity="0.8"/>
+          
+          <!-- Electron orbits -->
+          <circle cx="22" cy="22" r="8" fill="none" stroke="#00b894" stroke-width="0.8" opacity="0.5"/>
+          <circle cx="22" cy="22" r="12" fill="none" stroke="#00b894" stroke-width="0.8" opacity="0.3" transform="rotate(45 22 22)"/>
+          
+          <!-- Element symbol inside -->
+          <text x="22" y="26" font-family="Space Grotesk, sans-serif" font-size="12" font-weight="700" text-anchor="middle" fill="#5c3aff">To</text>
+          
+          <!-- Tech accent particles -->
+          <circle cx="28" cy="18" r="1.5" fill="#00b894" opacity="0.7"/>
+          <circle cx="16" cy="28" r="1.5" fill="#ff2b7f" opacity="0.7"/>
+          <circle cx="30" cy="28" r="1" fill="#00b894" opacity="0.5"/>
+          
+          <defs>
+            <linearGradient id="gradient" x1="0" y1="0" x2="44" y2="44">
+              <stop offset="0%" style="stop-color:#5c3aff;stop-opacity:0.12" />
+              <stop offset="100%" style="stop-color:#00b894;stop-opacity:0.08" />
+            </linearGradient>
+            <linearGradient id="gradientStroke" x1="0" y1="0" x2="44" y2="44">
+              <stop offset="0%" style="stop-color:#5c3aff;stop-opacity:0.5" />
+              <stop offset="100%" style="stop-color:#00b894;stop-opacity:0.5" />
+            </linearGradient>
+          </defs>
+        </svg>
+        <span class="logo-text">Tonium</span>
+      </a>
+      <button class="menu-btn" id="menu-btn" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact" class="nav-cta">Get In Touch</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-label fade-in">
+            <span class="label-dot"></span>
+            <span>Building digital excellence since 2017</span>
+          </div>
+          <h1 class="hero-title fade-in">
+              Meet <span class="gradient-text">Tonium</span> — <br>the new element in tech
+          </h1>
+          <p class="hero-subtitle fade-in">
+              <strong>Tonium (To)</strong> is a precious element fusing <strong>Tony's</strong> expertise with cutting-edge <strong>technology</strong>. Like titanium, palladium, and platinum, Tonium represents strength, precision, and rarity. I'm a full-stack engineer, API architect, UI designer, and creative technologist. I craft products that are fast, secure, beautiful, and built to scale.
+          </p>
+            <p class="hero-element fade-in" style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 1rem;">
+              ✨ Discovered: 2017 | Atomic Number: ∞ | Rarity: Exceptional | Stability: Proven Across 7+ Years
+            </p>
+          <div class="hero-stats fade-in">
+            <div class="stat">
+              <span class="stat-value">7+</span>
+              <span class="stat-label">Years of Experience</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">78+</span>
+              <span class="stat-label">Projects Shipped</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">133+</span>
+              <span class="stat-label">Happy Clients</span>
+            </div>
+          </div>
+          <div class="hero-buttons fade-in">
+            <a href="#work" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-secondary">Start a Project</a>
+          </div>
+        </div>
+        <div class="hero-visual fade-in">
+          <div class="card-showcase">
+            <div class="showcase-card">
+              <div class="card-icon">💻</div>
+              <h3>Web Development</h3>
+              <p>Responsive, high-performance applications</p>
+            </div>
+            <div class="showcase-card">
+              <div class="card-icon">🛠️</div>
+              <h3>API Design</h3>
+              <p>Scalable integrations & automations</p>
+            </div>
+            <div class="showcase-card">
+              <div class="card-icon">🎨</div>
+              <h3>UI/UX Design</h3>
+              <p>Beautiful and purposeful interfaces</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">01</span>
+          <h2>About Me</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text">
+            <p class="lede"><strong>Tonium</strong> is the rare element you need. I'm Tony Mutisya — a versatile software engineer and creative technologist who fuses technical excellence with artistic vision to create extraordinary digital products.</p>
+              <p>With seven years of proven experience, I've engineered enterprise systems (CRM, HRM, Hospital Management), architected scalable APIs and cloud infrastructure, designed intuitive experiences, and created compelling visual narratives. I specialize in full-stack development, API architecture, cloud systems, DevOps, cybersecurity, and emerging technologies. My work has impacted 133+ clients across startups, SMEs, and enterprises.</p>
+              <p>What makes <strong>Tonium</strong> valuable? I combine engineering rigor with creative thinking. I architect systems that don't just work—they inspire. Every line of code, every design choice, every interaction is deliberate. The result: products that perform at scale while feeling premium and purpose-driven.</p>
+            <div class="about-cta">
+              <a href="#contact" class="btn btn-secondary">Let's work together</a>
+            </div>
+          </div>
+          <div class="about-card">
+            <div class="skill-card">
+              <h4>Core Competencies</h4>
+              <ul>
+                <li>Full-Stack Web Development</li>
+                <li>API Development & Integration</li>
+                <li>Cloud Architecture (AWS, Azure, GCP)</li>
+                <li>DevOps & CI/CD Pipelines</li>
+                <li>UI/UX Design Systems</li>
+                <li>3D Animation & Motion Design</li>
+                <li>Photography & Videography</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">02</span>
+          <h2>What I Offer</h2>
+          <p class="section-subtitle">Comprehensive solutions designed to transform your business</p>
+        </div>
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-icon">🌐</div>
+            <h3>Web Development</h3>
+            <p>Responsive, user-friendly websites and applications that look exceptional on any device. From front-end excellence to back-end performance, I deliver production-grade solutions.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">📱</div>
+            <h3>Mobile & Desktop Apps</h3>
+            <p>Custom applications built to fit your specific needs. I create solutions that perform flawlessly, delight users, and scale with your business.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">🔗</div>
+            <h3>API Development</h3>
+            <p>Robust, scalable APIs that connect your systems. I design integrations with third-party services, build custom automations, and create data pipelines that streamline operations.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">☁️</div>
+            <h3>Cloud & DevOps</h3>
+            <p>Modern infrastructure solutions using AWS, Azure, and GCP. I set up continuous integration, manage deployments, and ensure your systems scale seamlessly with demand.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">🔒</div>
+            <h3>Security & Optimization</h3>
+            <p>Enterprise-grade security implementation and performance optimization. I protect your data, accelerate your systems, and maintain code quality throughout the product lifecycle.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">🎨</div>
+            <h3>Design & Creative</h3>
+            <p>Brand systems, UI/UX direction, 3D animation, and visual storytelling. I create the visual language that makes your product memorable and your brand distinctive.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section class="work" id="work">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">03</span>
+          <h2>Selected Work</h2>
+          <p class="section-subtitle">Projects that showcase strategy, engineering, and design excellence</p>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-tag">Enterprise</div>
+            <h3>Hospital Management System</h3>
+            <p>A comprehensive platform for hospital operations, patient management, and healthcare workflows. Built with scalability and user experience in mind.</p>
+            <ul class="tech-list">
+              <li>PHP/Laravel</li>
+              <li>MySQL Database</li>
+              <li>Real-time Operations</li>
+              <li>Security Compliance</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <div class="project-tag">Business Software</div>
+            <h3>CRM & HRM Systems</h3>
+            <p>End-to-end solutions for customer relationship management and human resource management. Streamlines workflows, improves data organization, and enhances team productivity.</p>
+            <ul class="tech-list">
+              <li>Web-based Platform</li>
+              <li>Custom APIs</li>
+              <li>User Authentication</li>
+              <li>Reporting & Analytics</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <div class="project-tag">Platform</div>
+            <h3>Real Estate & Rentals Platform</h3>
+            <p>Marketplace application connecting property owners with renters. Features advanced search, filtering, instant quotes, reviews, and a seamless booking experience.</p>
+            <ul class="tech-list">
+              <li>React Frontend</li>
+              <li>Express Backend</li>
+              <li>AWS Hosting</li>
+              <li>Payment Integration</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <div class="project-tag">Web Design</div>
+            <h3>E-Commerce & Service Platforms</h3>
+            <p>Beautiful, conversion-focused websites for catering, sanitation, healthcare, and food services. Each designed to showcase offerings and drive customer engagement.</p>
+            <ul class="tech-list">
+              <li>Responsive Design</li>
+              <li>Interactive UI</li>
+              <li>SEO Optimization</li>
+              <li>Mobile-First</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <div class="project-tag">Creative</div>
+            <h3>3D Portfolio & Visual Assets</h3>
+            <p>Immersive 3D experiences, motion graphics, and visual storytelling that bring products to life. Created with Blender and modern web technologies.</p>
+            <ul class="tech-list">
+              <li>Three.js</li>
+              <li>3D Modeling</li>
+              <li>Motion Design</li>
+              <li>Animation</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <div class="project-tag">Brand</div>
+            <h3>Tonium — Personal Brand System</h3>
+            <p>A complete digital identity that positions Tony as a premium software engineer and creative technologist. This portfolio system bridges code, design, and storytelling.</p>
+            <ul class="tech-list">
+              <li>Brand Strategy</li>
+              <li>Design System</li>
+              <li>Performance Focus</li>
+              <li>Scalable Platform</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="experience" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">04</span>
+          <h2>Professional Journey</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">2025 — Present</div>
+            <div class="timeline-content">
+              <h4>Independent Full-Stack Developer</h4>
+              <p>Leading end-to-end builds for business websites, booking platforms, and service-driven portals. Delivering production-ready code with focus on conversion and performance.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2023 — 2025</div>
+            <div class="timeline-content">
+              <h4>ICT & Marketing Manager</h4>
+              <p>Overseeing information systems and digital infrastructure for healthcare institutions. Managing Hospital Management System implementation, data security, and digital tool integration.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2022 — 2023</div>
+            <div class="timeline-content">
+              <h4>Integration Developer</h4>
+              <p>Designing and maintaining API integrations between internal systems and third-party services. Building scalable data pipelines and ensuring seamless cross-application communication.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2019 — 2022</div>
+            <div class="timeline-content">
+              <h4>Software Engineer</h4>
+              <p>Developed custom Residents Management System for residential communities. Features included registration, tenancy tracking, maintenance handling, announcements, and billing automation.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2016 — 2019</div>
+            <div class="timeline-content">
+              <h4>Freelance Full-Stack Developer</h4>
+              <p>Built websites and web applications including CRM, ERP, HRM, and Hospital Management Systems. Worked with React, Node.js, Laravel, and various databases to deliver scalable solutions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECH STACK -->
+    <section class="tech-stack" id="tech">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">05</span>
+          <h2>Technology Stack</h2>
+          <p class="section-subtitle">Tools and technologies I use to build exceptional products</p>
+        </div>
+        <div class="tech-grid">
+          <div class="tech-group">
+            <h4>Frontend</h4>
+            <div class="tech-items">
+              <span>HTML/CSS</span>
+              <span>JavaScript</span>
+              <span>React</span>
+              <span>Next.js</span>
+              <span>Bootstrap</span>
+              <span>Tailwind</span>
+            </div>
+          </div>
+          <div class="tech-group">
+            <h4>Backend</h4>
+            <div class="tech-items">
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>PHP</span>
+              <span>Laravel</span>
+              <span>Python</span>
+              <span>Django</span>
+            </div>
+          </div>
+          <div class="tech-group">
+            <h4>Database</h4>
+            <div class="tech-items">
+              <span>MySQL</span>
+              <span>PostgreSQL</span>
+              <span>MongoDB</span>
+              <span>SQLite</span>
+            </div>
+          </div>
+          <div class="tech-group">
+            <h4>Cloud & DevOps</h4>
+            <div class="tech-items">
+              <span>AWS</span>
+              <span>Azure</span>
+              <span>GCP</span>
+              <span>Docker</span>
+              <span>Git</span>
+              <span>Jenkins</span>
+            </div>
+          </div>
+          <div class="tech-group">
+            <h4>Design & Creative</h4>
+            <div class="tech-items">
+              <span>Figma</span>
+              <span>Photoshop</span>
+              <span>Illustrator</span>
+              <span>Blender</span>
+              <span>After Effects</span>
+            </div>
+          </div>
+          <div class="tech-group">
+            <h4>Other Tools</h4>
+            <div class="tech-items">
+              <span>Framer Motion</span>
+              <span>Three.js</span>
+              <span>GraphQL</span>
+              <span>REST APIs</span>
+              <span>Testing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">06</span>
+          <h2>What Clients Say</h2>
+          <p class="section-subtitle">Real feedback from real projects</p>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"Tony delivered exactly what we needed and went the extra mile optimizing for performance. His attention to detail and proactive communication made the entire process seamless."</p>
+            <div class="testimonial-author">
+              <strong>Jared — Co-Founder, HomeFit Solutions</strong>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"Working with Tony was an absolute game-changer for our business. He transformed our web platform into something we're truly proud of. The attention to detail was impeccable!"</p>
+            <div class="testimonial-author">
+              <strong>Muthoni — Founder, Tech Innovators</strong>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"Our new e-commerce site has dramatically increased sales. Tony's expertise in both front and back-end development made an immediate impact on our business metrics."</p>
+            <div class="testimonial-author">
+              <strong>Soila — Volunteer, Nebula Innovations</strong>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"I worked with Tony on an app for my client and the process was seamless. He was proactive, clear in communication, and really understood our unique requirements."</p>
+            <div class="testimonial-author">
+              <strong>Michelle — Developer, Seasons Consulting</strong>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"Tony brought my vision to life perfectly. He was patient with my ideas and provided fantastic guidance throughout the entire process. Highly recommended!"</p>
+            <div class="testimonial-author">
+              <strong>Wangeci — Manager, Wangeci's Kitchen</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">07</span>
+          <h2>Let's Build Something Amazing</h2>
+          <p class="section-subtitle">Whether you're a recruiter, client, or fellow creative, I'd love to hear from you.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-content">
+            <div class="contact-item">
+              <h4>Email</h4>
+              <a href="mailto:mutisya.antony@yahoo.com">mutisya.antony@yahoo.com</a>
+            </div>
+            <div class="contact-item">
+              <h4>Phone</h4>
+              <a href="tel:+254719516641">+254 719 516 641</a>
+            </div>
+            <div class="contact-item">
+              <h4>Location</h4>
+              <p>Kenya</p>
+            </div>
+            <div class="contact-item">
+              <h4>Availability</h4>
+              <p>Available for freelance projects, partnerships, and full-time opportunities</p>
+            </div>
+            <div class="contact-links">
+              <a href="https://github.com/ToshTony" target="_blank" rel="noreferrer" class="social-btn">GitHub</a>
+              <a href="https://www.linkedin.com/in/antony-mumo-mutisya/" target="_blank" rel="noreferrer" class="social-btn">LinkedIn</a>
+              <a href="https://wa.me/+254719516641" target="_blank" rel="noreferrer" class="social-btn">WhatsApp</a>
+            </div>
+          </div>
+          <form class="contact-form" id="contact-form">
+            <div class="form-group">
+              <input type="text" id="name" name="name" required placeholder="Your name">
+              <label for="name">Name</label>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" required placeholder="Your email">
+              <label for="email">Email</label>
+            </div>
+            <div class="form-group">
+              <input type="text" id="subject" name="subject" required placeholder="Project subject">
+              <label for="subject">Subject</label>
+            </div>
+            <div class="form-group">
+              <textarea id="message" name="message" required placeholder="Tell me about your project..." rows="6"></textarea>
+              <label for="message">Message</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <p class="form-note">I typically respond within 24 hours</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <p class="footer-brand">Tonium</p>
+          <p class="footer-tagline">Tony's premium tech brand and personal platform</p>
+        </div>
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#work">Work</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Tonium. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/scripts.js"></script>
+</body>
+</html>
