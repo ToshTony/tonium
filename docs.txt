@@ -1,0 +1,15 @@
+Hello and Welcome.
+
+
+Add Captcha
+Form evaluation
+    
+
+- Check responsiveness of scene.
+
+git config
+git config --global user.name "Tony"
+git config --global user.email "jayton006@gmail.com"
+git config --global --list
+git remote -v
+git config --list

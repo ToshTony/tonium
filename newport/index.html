@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tony | Creative Full-Stack Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://unpkg.com/framer-motion@10.16.4/dist/framer-motion.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Space Grotesk', sans-serif; background: #030712; color: white; overflow-x: hidden; }
+        #canvas-container { position: fixed; top: 0; left: 0; z-index: -1; width: 100%; height: 100vh; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .glow-text { text-shadow: 0 0 20px rgba(59, 130, 246, 0.5); }
+        .custom-cursor { width: 20px; height: 20px; border: 2px solid #3b82f6; border-radius: 50%; position: fixed; pointer-events: none; z-index: 9999; transition: transform 0.1s ease; }
+    </style>
+</head>
+<body>
+
+    <div class="custom-cursor" id="cursor"></div>
+    <div id="canvas-container"></div>
+
+    <nav class="fixed top-0 w-full z-50 px-10 py-6 flex justify-between items-center">
+        <div class="text-2xl font-bold tracking-tighter">TONY<span class="text-blue-500">.</span></div>
+        <div class="glass px-6 py-2 rounded-full flex gap-8 text-sm uppercase tracking-widest">
+            <a href="#work" class="hover:text-blue-400 transition">Work</a>
+            <a href="#lab" class="hover:text-blue-400 transition">The Lab</a>
+            <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
+        </div>
+    </nav>
+
+    <section class="h-screen flex flex-col justify-center items-center px-4 relative">
+        <div class="text-center z-10">
+            <h2 class="text-blue-500 text-lg mb-4 tracking-[0.5em] uppercase font-light">Full Stack Architect</h2>
+            <h1 class="text-6xl md:text-9xl font-bold mb-6 tracking-tighter">
+                CRAFTING <br> <span class="glow-text">DIGITAL DEPTH</span>
+            </h1>
+            <p class="max-w-xl mx-auto text-gray-400 text-lg leading-relaxed mb-8">
+                Building the future of the Kenyan web through scalable Django backends and immersive React interfaces.
+            </p>
+            <div class="flex gap-4 justify-center">
+                <button class="bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-full font-bold transition-all transform hover:scale-110">
+                    Explore Projects
+                </button>
+                <button class="glass px-8 py-4 rounded-full font-bold hover:bg-white/10 transition">
+                    The Resume
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="work" class="py-32 px-10">
+        <h3 class="text-4xl font-bold mb-20 text-center">Featured Deployments</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="group relative glass p-1 rounded-3xl overflow-hidden hover:border-blue-500/50 transition-all duration-500">
+                <div class="h-80 bg-gray-900 rounded-2xl overflow-hidden relative">
+                    <div class="absolute inset-0 bg-blue-600/20 group-hover:opacity-0 transition-opacity"></div>
+                    <img src="https://via.placeholder.com/600x400" alt="SaniBook" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                </div>
+                <div class="p-8">
+                    <h4 class="text-2xl font-bold mb-2">SaniBook.ke</h4>
+                    <p class="text-gray-400 mb-6">WASH Sector Data Management System. Turning invisible data into actionable insights.</p>
+                    <div class="flex gap-2">
+                        <span class="text-xs bg-blue-500/10 text-blue-400 px-3 py-1 rounded-full">PHP</span>
+                        <span class="text-xs bg-blue-500/10 text-blue-400 px-3 py-1 rounded-full">SQL</span>
+                        <span class="text-xs bg-blue-500/10 text-blue-400 px-3 py-1 rounded-full">GIS</span>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </section>
+
+    <script>
+        // 1. Interactive 3D Background (Three.js)
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.getElementById('canvas-container').appendChild(renderer.domElement);
+
+        const geometry = new THREE.IcosahedronGeometry(10, 1);
+        const material = new THREE.MeshPhongMaterial({ color: 0x3b82f6, wireframe: true });
+        const sphere = new THREE.Mesh(geometry, material);
+        scene.add(sphere);
+
+        const light = new THREE.PointLight(0xffffff, 1, 100);
+        light.position.set(10, 10, 10);
+        scene.add(light);
+        camera.position.z = 25;
+
+        function animate() {
+            requestAnimationFrame(animate);
+            sphere.rotation.x += 0.002;
+            sphere.rotation.y += 0.002;
+            renderer.render(scene, camera);
+        }
+        animate();
+
+        // 2. Custom Cursor Logic
+        const cursor = document.getElementById('cursor');
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.transform = `translate(${e.clientX - 10}px, ${e.clientY - 10}px)`;
+            // Parallax effect for 3D sphere
+            sphere.rotation.y = e.clientX * 0.0005;
+            sphere.rotation.x = e.clientY * 0.0005;
+        });
+
+        // 3. Handle Resize
+        window.addEventListener('resize', () => {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        });
+    </script>
+</body>
+</html>

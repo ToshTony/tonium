@@ -1,112 +1,187 @@
-/* Tonium — Interactive Script */
+(function () {
+  "use strict";
 
-const year = document.getElementById('year');
-const menuBtn = document.getElementById('menu-btn');
-const navLinks = document.getElementById('nav-links');
-const contactForm = document.getElementById('contact-form');
-const header = document.querySelector('.header');
+ /* =====================================
+   THEME TOGGLE
+   ===================================== */
+const themeToggle = document.getElementById("theme-toggle");
 
-// Set current year
-if (year) {
-  year.textContent = new Date().getFullYear();
+function applyTheme(isLight) {
+  if (isLight) {
+    document.documentElement.setAttribute("data-theme", "light");
+    localStorage.setItem("theme", "light");
+  } else {
+    document.documentElement.removeAttribute("data-theme");
+    localStorage.setItem("theme", "dark");
+  }
+
+  window.dispatchEvent(
+    new CustomEvent("themeChanged", { detail: { isLight } })
+  );
 }
 
-// Mobile menu toggle
-if (menuBtn && navLinks) {
-  menuBtn.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-    menuBtn.classList.toggle('active');
+// Default to DARK mode unless user explicitly chose light mode
+const savedTheme = localStorage.getItem("theme");
+let isLightMode = savedTheme === "light";
+
+applyTheme(isLightMode);
+
+if (themeToggle) {
+  themeToggle.addEventListener("click", () => {
+    isLightMode = !isLightMode;
+    applyTheme(isLightMode);
+  });
+}
+
+  /* =====================================
+     LOADER
+     ===================================== */
+  const loader = document.getElementById("loader");
+  window.addEventListener("load", () => {
+    setTimeout(() => {
+      if (loader) {
+        loader.classList.add("done");
+        // Ensure it gets unmounted out of the way for interaction
+        setTimeout(() => loader.style.display = "none", 800);
+      }
+    }, 800);
   });
 
-  // Close menu on link click
-  navLinks.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-      navLinks.classList.remove('active');
-      menuBtn.classList.remove('active');
+  /* =====================================
+     HEADER SCROLL & MOBILE MENU
+     ===================================== */
+  const header = document.getElementById("header");
+  const navToggle = document.getElementById("nav-toggle");
+  const navMenu = document.getElementById("nav-menu");
+
+  function onScroll() {
+    const y = window.scrollY;
+    if (header) {
+      header.classList.toggle("scrolled", y > 60);
+    }
+  }
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+
+  if (navToggle && navMenu) {
+    navToggle.addEventListener("click", () => {
+      const isExpanded = navToggle.getAttribute("aria-expanded") === "true";
+      navToggle.setAttribute("aria-expanded", !isExpanded);
+      navMenu.classList.toggle("active");
+    });
+
+    // Close menu when clicking a link
+    navMenu.querySelectorAll(".nav-link").forEach(link => {
+      link.addEventListener("click", () => {
+        navToggle.setAttribute("aria-expanded", "false");
+        navMenu.classList.remove("active");
+      });
+    });
+  }
+
+  /* =====================================
+     MAGNETIC BUTTONS (Wow Factor)
+     ===================================== */
+  const magneticEls = document.querySelectorAll('.magnetic');
+  magneticEls.forEach((el) => {
+    el.addEventListener('mousemove', (e) => {
+      const rect = el.getBoundingClientRect();
+      const h = rect.width / 2;
+      const x = e.clientX - rect.left - h;
+      const y = e.clientY - rect.top - (rect.height / 2);
+      el.style.transform = `translate(${x * 0.3}px, ${y * 0.3}px)`;
+    });
+    el.addEventListener('mouseleave', () => {
+      el.style.transform = 'translate(0px, 0px)';
     });
   });
-}
 
-// Smooth scroll for anchor links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    const href = this.getAttribute('href');
-    if (href !== '#' && document.querySelector(href)) {
-      e.preventDefault();
-      const target = document.querySelector(href);
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
+  /* =====================================
+     SMOOTH SCROLLING
+     ===================================== */
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      const targetId = this.getAttribute('href');
+      if (targetId === '#') return;
+      const targetEl = document.querySelector(targetId);
+      if (targetEl) {
+        e.preventDefault();
+        targetEl.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
   });
-});
 
-// Contact form handling
-if (contactForm) {
-  contactForm.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const subject = document.getElementById('subject').value;
-    const message = document.getElementById('message').value;
-    const btn = contactForm.querySelector('button[type="submit"]');
-    const originalText = btn.textContent;
-    
-    // Prepare mailto link
-    const mailtoLink = `mailto:mutisya.antony@yahoo.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`From: ${name} (${email})\n\n${message}`)}`;
-    
-    // Show success state
-    btn.textContent = '✓ Opening email client...';
-    btn.disabled = true;
-    
-    // Open email client
-    setTimeout(() => {
-      window.location.href = mailtoLink;
-      
-      // Reset form after delay
-      setTimeout(() => {
-        contactForm.reset();
-        btn.textContent = originalText;
-        btn.disabled = false;
-      }, 1500);
-    }, 500);
+  /* =====================================
+     FOOTER YEAR
+     ===================================== */
+  const yearEl = document.getElementById("year");
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  /* =====================================
+     INTERSECTION OBSERVER (REVEALS)
+     ===================================== */
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in-view");
+        }
+      });
+    },
+    { threshold: 0.1, rootMargin: "0px 0px -50px 0px" }
+  );
+
+  document.querySelectorAll("[data-anim]").forEach((el) => {
+    observer.observe(el);
   });
-}
 
-// Intersection Observer for fade-in animations
-const observerOptions = {
-  threshold: 0.1,
-  rootMargin: '0px 0px -50px 0px'
-};
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.style.opacity = '1';
-      entry.target.style.transform = 'translateY(0)';
-      observer.unobserve(entry.target);
-    }
-  });
-}, observerOptions);
-
-// Apply animation to elements
-document.querySelectorAll('.fade-in').forEach(el => {
-  el.style.opacity = '0';
-  el.style.transform = 'translateY(20px)';
-  el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-  observer.observe(el);
-});
-
-// Header scroll effect
-window.addEventListener('scroll', () => {
-  if (!header) {
-    return;
+  /* =====================================
+     CURSOR GLOW
+     ===================================== */
+  const glow = document.getElementById("glow-cursor");
+  if (glow) {
+    window.addEventListener("mousemove", (e) => {
+      // Small requestAnimationFrame for smooth non-blocking update
+      requestAnimationFrame(() => {
+        glow.style.transform = `translate(${e.clientX}px, ${e.clientY}px) translate(-50%, -50%)`;
+      });
+    });
   }
 
-  if ((window.pageYOffset || document.documentElement.scrollTop) > 50) {
-    header.classList.add('scrolled');
+  /* =====================================
+     GSAP PARALLAX & HERO ENTRANCE
+     ===================================== */
+  function initGSAP() {
+    if (!window.gsap) return;
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    const motionOk = !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (!motionOk) return;
+
+    const tl = gsap.timeline({ delay: 1 });
+
+    tl.to(".hero-label", { opacity: 1, duration: 0.8, y: 0 })
+      .to(".hero-title .line", { y: 0, opacity: 1, duration: 1, stagger: 0.15, ease: "power3.out" }, "-=0.4")
+      .to(".hero-desc", { opacity: 1, y: 0, duration: 0.8 }, "-=0.6")
+      .to(".hero .btn", { opacity: 1, y: 0, duration: 0.5, stagger: 0.1 }, "-=0.4");
+
+    gsap.to("#hero-canvas", {
+      yPercent: 30,
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".hero",
+        start: "top top",
+        end: "bottom top",
+        scrub: true,
+      },
+    });
+  }
+
+  if (document.readyState === "complete") {
+    initGSAP();
   } else {
-    header.classList.remove('scrolled');
+    window.addEventListener("load", initGSAP);
   }
-});
-
-console.log('🚀 Tonium is live and ready to impress!');
+})();
