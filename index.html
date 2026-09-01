@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-4R4281DBZ0"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-4R4281DBZ0');
   </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Tonium.tech — Full-stack developer & creative technologist crafting modern digital experiences.">
-  <title>Tonium.tech | Developer & Creative Technologist</title>
+  <meta name="description" content="Tonium helps businesses modernize systems, automate workflows, and build AI-powered tools that improve operational efficiency and growth.">
+  <title>Tonium | Digital Transformation Engineer & Software Consultant</title>
   <link rel="icon" href="assets/imgs/tologo.png" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +19,6 @@
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-  <div class="glow-cursor" id="glow-cursor"></div>
   <div class="glow-cursor" id="glow-cursor"></div>
   <div class="loader" id="loader">
     <div class="loader-bar"></div>
@@ -37,9 +34,9 @@
       </a>
       <ul class="nav-menu" id="nav-menu">
         <li><a href="#about" class="nav-link" data-index="01">About</a></li>
-        <li><a href="#skills" class="nav-link" data-index="02">Skills</a></li>
-        <li><a href="#experience" class="nav-link" data-index="03">Experience</a></li>
-        <li><a href="#projects" class="nav-link" data-index="04">Projects</a></li>
+        <li><a href="#services" class="nav-link" data-index="02">Services</a></li>
+        <li><a href="#case-studies" class="nav-link" data-index="03">Case Studies</a></li>
+        <li><a href="#projects" class="nav-link" data-index="04">Work</a></li>
         <li><a href="#contact" class="nav-link" data-index="05">Contact</a></li>
       </ul>
       <div class="nav-actions">
@@ -48,18 +45,13 @@
           <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
         </button>
         <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle menu">
-          <span class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </span>
+          <span class="hamburger"><span></span><span></span><span></span></span>
         </button>
       </div>
     </nav>
   </header>
 
   <main id="main">
-    <!-- HERO -->
     <section class="hero" id="top" aria-labelledby="hero-heading">
       <canvas id="hero-canvas" aria-hidden="true"></canvas>
       <div class="hero-gradient" aria-hidden="true"></div>
@@ -67,27 +59,46 @@
         <div class="hero-content">
           <div class="hero-label">
             <span class="line"></span>
-            <span class="label-text">Full-Stack Developer & Creative Technologist</span>
+            <span class="label-text">Digital transformation engineer • software consultant • technical strategist</span>
           </div>
+
           <h1 id="hero-heading" class="hero-title">
-            <span class="title-line"><span class="word">I craft</span></span>
-            <span class="title-line"><span class="word">digital</span></span>
-            <span class="title-line"><span class="word">experiences</span> <span class="word accent">that</span></span>
-            <span class="title-line"><span class="word accent">stand out.</span></span>
+            <span class="title-line"><span class="word">I help</span></span>
+            <span class="title-line"><span class="word">businesses</span></span>
+            <span class="title-line"><span class="word">modernize</span> <span class="word accent">operations</span></span>
+            <span class="title-line"><span class="word accent">with software that works.</span></span>
           </h1>
-          <p class="hero-description">
-            Tonium.tech — a multidisciplinary developer blending engineering, design, and motion to build products that feel fast, premium, and unforgettable.
+
+          <p class="hero-description hero-desc">
+            I build digital systems, workflow automations, and AI-enabled business tools that reduce manual work, improve reliability, and unlock operational growth for startups and companies ready to scale.
           </p>
+
           <div class="hero-cta">
-            <a href="#projects" class="btn btn-fill magnetic">
-              <span>View Work</span>
+            <a href="#contact" class="btn btn-fill magnetic">
+              <span>Book a discovery call</span>
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
             </a>
-            <a href="#contact" class="btn btn-outline magnetic">
-              <span>Get in Touch</span>
+            <a href="#case-studies" class="btn btn-outline magnetic">
+              <span>See case studies</span>
             </a>
           </div>
+
+          <div class="hero-stats" aria-label="Tonium impact summary">
+            <div>
+              <strong>8+</strong>
+              <span>Years engineering</span>
+            </div>
+            <div>
+              <strong>10+</strong>
+              <span>Years coding</span>
+            </div>
+            <div>
+              <strong>ERP • HR • CRM • SaaS</strong>
+              <span>Business systems delivered</span>
+            </div>
+          </div>
         </div>
+
         <div class="hero-scroll" aria-hidden="true">
           <span>Scroll</span>
           <div class="scroll-line"></div>
@@ -97,7 +108,6 @@
 
     <div class="interactive-divider" data-shape="torus"></div>
 
-    <!-- ABOUT -->
     <section class="section" id="about" aria-labelledby="about-heading">
       <div class="container">
         <div class="section-label" data-anim="fade-up">
@@ -105,33 +115,37 @@
           <span class="label-line"></span>
           <span>About</span>
         </div>
+
         <div class="about-grid">
           <div class="about-text" data-anim="fade-up" data-delay="0.1">
-            <h2 id="about-heading" class="section-title">Turning ambitious ideas into polished digital products.</h2>
-            <p>I'm a multidisciplinary creator who blends engineering precision with visual design instincts. My work sits at the intersection of software, storytelling, and interaction design.</p>
-            <p>From architecture to animation, I build experiences that are clear, performant, and emotionally engaging. Every interface is shaped for real users, business goals, and long-term maintainability.</p>
+            <h2 id="about-heading" class="section-title">Turning business friction into scalable digital systems.</h2>
+            <p>Tonium — digital transformation engineering and software strategist helping founders, businesses, and teams modernize operations through reliable software, automation, and practical AI-enabled workflows.</p>
+            <p>Our work sits at the intersection of engineering, product thinking, and business execution. We build systems that improve internal operations, replace manual bottlenecks, and support long-term scalability without creating unnecessary complexity.</p>
           </div>
+
           <div class="about-cards">
             <div class="info-card" data-anim="fade-up" data-delay="0.2">
               <div class="card-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19V5a2 2 0 012-2h12a2 2 0 012 2v14M8 9h8M8 13h8M8 17h5"/></svg>
               </div>
-              <h3>Full-Stack Delivery</h3>
-              <p>Frontend systems, backend APIs, deployment, and optimization — one cohesive workflow.</p>
+              <h3>System modernization</h3>
+              <p>Replacing outdated manual processes with digital workflows that are easier to manage and scale.</p>
             </div>
+
             <div class="info-card" data-anim="fade-up" data-delay="0.3">
               <div class="card-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 8h12M6 12h12M6 16h8"/><rect x="3" y="3" width="18" height="18" rx="2"/></svg>
               </div>
-              <h3>Creative Direction</h3>
-              <p>Strong brand visuals, motion language, and UX consistency across web and media.</p>
+              <h3>Operations automation</h3>
+              <p>Build software that removes repetitive work, reduces errors, and improves team productivity.</p>
             </div>
+
             <div class="info-card" data-anim="fade-up" data-delay="0.4">
               <div class="card-icon">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
               </div>
-              <h3>Performance Mindset</h3>
-              <p>Lean code, optimized assets, and smooth interactions on every device.</p>
+              <h3>AI-enabled workflows</h3>
+              <p>Practical automation and AI systems that help teams move faster without unnecessary complexity.</p>
             </div>
           </div>
         </div>
@@ -140,87 +154,100 @@
 
     <div class="interactive-divider" data-shape="icosahedron"></div>
 
-    <!-- SKILLS -->
-    <section class="section section-dark" id="skills" aria-labelledby="skills-heading">
+    <section class="section section-dark" id="services" aria-labelledby="services-heading">
       <div class="container">
         <div class="section-label" data-anim="fade-up">
           <span class="label-number">02</span>
           <span class="label-line"></span>
-          <span>Skills</span>
+          <span>Services</span>
         </div>
-        <h2 id="skills-heading" class="section-title" data-anim="fade-up" data-delay="0.1">Tech stack built for product velocity and craft.</h2>
-        <div class="skills-grid">
-          <div class="skill-item" data-anim="fade-up" data-delay="0.1">
-            <div class="skill-header">
-              <h3>Frontend Engineering</h3>
-              <span class="skill-pct">95%</span>
-            </div>
-            <p>HTML, CSS, JavaScript, React, responsive architecture, component systems.</p>
-            <div class="skill-bar"><div class="skill-fill" data-level="95"></div></div>
-          </div>
-          <div class="skill-item" data-anim="fade-up" data-delay="0.2">
-            <div class="skill-header">
-              <h3>Backend Engineering</h3>
-              <span class="skill-pct">90%</span>
-            </div>
-            <p>Node.js, Express, PHP/Laravel, REST APIs, auth flows, SQL & cloud.</p>
-            <div class="skill-bar"><div class="skill-fill" data-level="90"></div></div>
-          </div>
-          <div class="skill-item" data-anim="fade-up" data-delay="0.3">
-            <div class="skill-header">
-              <h3>Design & Motion</h3>
-              <span class="skill-pct">88%</span>
-            </div>
-            <p>Photoshop, Illustrator, After Effects, Blender, cinematic visual direction.</p>
-            <div class="skill-bar"><div class="skill-fill" data-level="88"></div></div>
-          </div>
-          <div class="skill-item" data-anim="fade-up" data-delay="0.4">
-            <div class="skill-header">
-              <h3>Media Production</h3>
-              <span class="skill-pct">86%</span>
-            </div>
-            <p>Photography, videography, editing pipelines, color grading, narrative.</p>
-            <div class="skill-bar"><div class="skill-fill" data-level="86"></div></div>
-          </div>
+
+        <h2 id="services-heading" class="section-title" data-anim="fade-up" data-delay="0.1">Systems, automation, and technical strategy built for business outcomes.</h2>
+
+        <div class="service-grid">
+          <article class="service-card" data-anim="fade-up" data-delay="0.1">
+            <span class="service-index">01</span>
+            <h3>Digital transformation consulting</h3>
+            <p>Modernize legacy workflows, replace brittle processes, and turn operational bottlenecks into scalable systems.</p>
+          </article>
+
+          <article class="service-card" data-anim="fade-up" data-delay="0.15">
+            <span class="service-index">02</span>
+            <h3>Business software & internal tools</h3>
+            <p>Build internal platforms, management systems, and operational tools that improve team alignment and execution.</p>
+          </article>
+
+          <article class="service-card" data-anim="fade-up" data-delay="0.2">
+            <span class="service-index">03</span>
+            <h3>Workflow automation</h3>
+            <p>Eliminate repetitive work and improve reliability through smart integrations and process design.</p>
+          </article>
+
+          <article class="service-card" data-anim="fade-up" data-delay="0.25">
+            <span class="service-index">04</span>
+            <h3>AI workflow implementation</h3>
+            <p>Deploy practical AI-powered systems for productivity, support, research, and internal decision-making.</p>
+          </article>
+
+          <article class="service-card" data-anim="fade-up" data-delay="0.3">
+            <span class="service-index">05</span>
+            <h3>Fractional technical leadership</h3>
+            <p>Architect solutions, advise on technical direction, and guide teams through high-impact implementation decisions.</p>
+          </article>
+
+          <article class="service-card" data-anim="fade-up" data-delay="0.35">
+            <span class="service-index">06</span>
+            <h3>System migration & optimization</h3>
+            <p>Modernize legacy infrastructure with safer architecture, cleaner data flow, and better long-term maintainability.</p>
+          </article>
         </div>
       </div>
     </section>
 
     <div class="interactive-divider" data-shape="knot"></div>
 
-    <!-- EXPERIENCE -->
-    <section class="section" id="experience" aria-labelledby="exp-heading">
+    <section class="section" id="case-studies" aria-labelledby="case-studies-heading">
       <div class="container">
         <div class="section-label" data-anim="fade-up">
           <span class="label-number">03</span>
           <span class="label-line"></span>
-          <span>Experience</span>
+          <span>Case studies</span>
         </div>
-        <h2 id="exp-heading" class="section-title" data-anim="fade-up" data-delay="0.1">A track record of shipping outcomes, not just deliverables.</h2>
-        <div class="timeline">
-          <article class="timeline-entry" data-anim="fade-up" data-delay="0.15">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <span class="timeline-date">2025 — Present</span>
-              <h3>Independent Full-Stack Developer</h3>
-              <p>Leading end-to-end builds for business websites, booking platforms, and service-driven portals. Delivering production-ready code with a focus on conversion and performance.</p>
-            </div>
+
+        <h2 id="case-studies-heading" class="section-title" data-anim="fade-up" data-delay="0.1">Proof that technical execution translates into business value.</h2>
+
+        <div class="case-grid">
+          <article class="case-card" data-anim="fade-up" data-delay="0.1">
+            <div class="case-badge">Healthcare operations</div>
+            <h3>Healthcare service platform modernization</h3>
+            <p>Built a service-driven platform with cleaner workflows, better information flow, and a more trust-focused user experience for healthcare operations.</p>
+            <ul>
+              <li>Improved service flow and usability</li>
+              <li>Modernized client-facing and internal workflows</li>
+              <li>Created a clearer digital experience for service delivery</li>
+            </ul>
           </article>
-          <article class="timeline-entry" data-anim="fade-up" data-delay="0.25">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <span class="timeline-date">2023 — 2025</span>
-              <h3>Creative Technologist</h3>
-              <p>Combined development with branding and visual content production for digital-first campaigns. Built and shipped projects across web, design, and media.</p>
-            </div>
+
+          <article class="case-card" data-anim="fade-up" data-delay="0.2">
+            <div class="case-badge">Business systems</div>
+            <h3>ERP + HRM + CRM workflow systems</h3>
+            <p>Designed and implemented business systems to replace manual operations with structured digital tools for payroll, HR, client records, and process management.</p>
+            <ul>
+              <li>Reduced operational friction and manual work</li>
+              <li>Improved visibility across departments</li>
+              <li>Enabled better coordination and process standardization</li>
+            </ul>
           </article>
-          <article class="timeline-entry" data-anim="fade-up" data-delay="0.35">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <span class="timeline-date">Core Milestones</span>
-              <h3>Multi-Disciplinary Delivery</h3>
-              <p>Architected and launched production projects spanning web development, design systems, animation pipelines, and media production workflows.</p>
-            </div>
+
+          <article class="case-card" data-anim="fade-up" data-delay="0.3">
+            <div class="case-badge">AI & automation</div>
+            <h3>Operational automation and workflow tooling</h3>
+            <p>Built business tooling that boosts process efficiency through automated flows, better data handling, and practical digital optimization.</p>
+            <ul>
+              <li>Reduced repetitive manual work</li>
+              <li>Improved reliability and team efficiency</li>
+              <li>Created a scalable foundation for future AI enhancement</li>
+            </ul>
           </article>
         </div>
       </div>
@@ -228,206 +255,153 @@
 
     <div class="interactive-divider" data-shape="octahedron"></div>
 
-    <!-- PROJECTS -->
-    <section class="section section-dark" id="projects" aria-labelledby="projects-heading">
+    <section class="section section-dark" id="process" aria-labelledby="process-heading">
       <div class="container">
         <div class="section-label" data-anim="fade-up">
           <span class="label-number">04</span>
           <span class="label-line"></span>
-          <span>Work</span>
+          <span>Process</span>
         </div>
-        <h2 id="projects-heading" class="section-title" data-anim="fade-up" data-delay="0.1">Selected projects combining strategy, engineering, & style.</h2>
-        <div class="projects-grid">
 
-          <a href="https://toshtony.github.io/RentalApp/" target="_blank" rel="noopener noreferrer" class="project-card" data-anim="fade-up" data-delay="0.1">
-            <div class="project-image">
-              <img src="assets/imgs/rentals-pic.png" alt="MutanuRentals project" loading="lazy">
-              <div class="project-overlay">
-                <span class="view-project">View Project
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
-                </span>
-              </div>
-            </div>
-            <div class="project-info">
-              <div class="project-meta">
-                <span class="project-num">01</span>
-                <span class="project-type">Web Platform</span>
-              </div>
-              <h3>MutanuRentals</h3>
-              <div class="project-tags"><span>UI/UX</span><span>Responsive</span><span>Listings</span></div>
-            </div>
-          </a>
+        <h2 id="process-heading" class="section-title" data-anim="fade-up" data-delay="0.1">Simple process. Clear execution. Measurable value.</h2>
 
-          <a href="https://toshtony.github.io/Wangecis-Kitchen/" target="_blank" rel="noopener noreferrer" class="project-card" data-anim="fade-up" data-delay="0.2">
-            <div class="project-image">
-              <img src="assets/imgs/kitchen-pic.png" alt="Wangeci's Kitchen project" loading="lazy">
-              <div class="project-overlay">
-                <span class="view-project">View Project
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
-                </span>
-              </div>
-            </div>
-            <div class="project-info">
-              <div class="project-meta">
-                <span class="project-num">02</span>
-                <span class="project-type">Brand Website</span>
-              </div>
-              <h3>Wangeci's Kitchen</h3>
-              <div class="project-tags"><span>Branding</span><span>Food Tech</span><span>Content</span></div>
-            </div>
-          </a>
+        <div class="process-grid">
+          <div class="process-card" data-anim="fade-up" data-delay="0.1">
+            <span class="process-step">01</span>
+            <h3>Diagnose</h3>
+            <p>Understand the existing problem, bottlenecks, and business context before recommending a solution.</p>
+          </div>
 
-          <a href="https://gifthealthcareservices.com/" target="_blank" rel="noopener noreferrer" class="project-card" data-anim="fade-up" data-delay="0.3">
-            <div class="project-image">
-              <img src="assets/imgs/gifthealth.png" alt="Gift Healthcare Services" loading="lazy">
-              <div class="project-overlay">
-                <span class="view-project">View Project
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
-                </span>
-              </div>
-            </div>
-            <div class="project-info">
-              <div class="project-meta">
-                <span class="project-num">03</span>
-                <span class="project-type">Healthcare</span>
-              </div>
-              <h3>Gift Healthcare Services</h3>
-              <div class="project-tags"><span>Accessibility</span><span>Trust UI</span><span>Medical</span></div>
-            </div>
-          </a>
+          <div class="process-card" data-anim="fade-up" data-delay="0.15">
+            <span class="process-step">02</span>
+            <h3>Design</h3>
+            <p>Map the workflow, plan the architecture, and define the most practical and scalable technical path.</p>
+          </div>
 
-          <a href="https://emmafarrphotography.com/" target="_blank" rel="noopener noreferrer" class="project-card" data-anim="fade-up" data-delay="0.15">
-            <div class="project-image">
-              <img src="assets/imgs/faarrcrop.png" alt="Emma Farr Photography" loading="lazy">
-              <div class="project-overlay">
-                <span class="view-project">View Project
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
-                </span>
-              </div>
-            </div>
-            <div class="project-info">
-              <div class="project-meta">
-                <span class="project-num">04</span>
-                <span class="project-type">Photography Portfolio</span>
-              </div>
-              <h3>Emma Farr Photography</h3>
-              <div class="project-tags"><span>Gallery UX</span><span>Minimal</span><span>Fast Load</span></div>
-            </div>
-          </a>
+          <div class="process-card" data-anim="fade-up" data-delay="0.2">
+            <span class="process-step">03</span>
+            <h3>Build</h3>
+            <p>Implement the system with clean, maintainable code and a clear path to adoption and long-term reliability.</p>
+          </div>
 
-          <a href="https://www.AcademicTreeHouse.com" target="_blank" rel="noopener noreferrer" class="project-card" data-anim="fade-up" data-delay="0.25">
-            <div class="project-image">
-              <img src="assets/imgs/academictree.png" alt="Academic Tree House" loading="lazy">
-              <div class="project-overlay">
-                <span class="view-project">View Project
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
-                </span>
-              </div>
-            </div>
-            <div class="project-info">
-              <div class="project-meta">
-                <span class="project-num">05</span>
-                <span class="project-type">Education Platform</span>
-              </div>
-              <h3>Academic Tree House</h3>
-              <div class="project-tags"><span>Education</span><span>Conversion</span><span>UX</span></div>
-            </div>
-          </a>
-
-          <a href="https://emeraldspices.com/" target="_blank" rel="noopener noreferrer" class="project-card" data-anim="fade-up" data-delay="0.35">
-            <div class="project-image">
-              <img src="assets/imgs/spices.png" alt="Emerald Spices" loading="lazy">
-              <div class="project-overlay">
-                <span class="view-project">View Project
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
-                </span>
-              </div>
-            </div>
-            <div class="project-info">
-              <div class="project-meta">
-                <span class="project-num">06</span>
-                <span class="project-type">E-Commerce</span>
-              </div>
-              <h3>Emerald Spices</h3>
-              <div class="project-tags"><span>Commerce</span><span>Brand</span><span>Sales UX</span></div>
-            </div>
-          </a>
-
-        </div>
-      </div>
-    </section>
-
-    <div class="interactive-divider" data-shape="cylinder"></div>
-
-    <!-- TESTIMONIALS -->
-    <section class="section" id="testimonials" aria-labelledby="test-heading">
-      <div class="container">
-        <div class="section-label" data-anim="fade-up">
-          <span class="label-number">&mdash;</span>
-          <span class="label-line"></span>
-          <span>Testimonials</span>
-        </div>
-        <h2 id="test-heading" class="section-title" data-anim="fade-up" data-delay="0.1">People remember how your product made them feel.</h2>
-        <div class="testimonials-row">
-          <blockquote class="testimonial-card" data-anim="fade-up" data-delay="0.15">
-            <div class="quote-icon" aria-hidden="true">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" opacity="0.15"><path d="M11 7H7a4 4 0 00-4 4v6h6v-6H5a4 4 0 014-4V7zm12 0h-4a4 4 0 00-4 4v6h6v-6h-4a4 4 0 014-4V7z"/></svg>
-            </div>
-            <p>"Antony brings a rare blend of technical depth and creative intuition. Every collaboration felt intentional and high quality."</p>
-            <footer class="testimonial-author">
-              <img src="assets/imgs/avatar2.jpg" alt="" loading="lazy" width="40" height="40">
-              <div>
-                <cite>Jeremy K.</cite>
-                <span>Business Founder</span>
-              </div>
-            </footer>
-          </blockquote>
-          <blockquote class="testimonial-card" data-anim="fade-up" data-delay="0.25">
-            <div class="quote-icon" aria-hidden="true">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" opacity="0.15"><path d="M11 7H7a4 4 0 00-4 4v6h6v-6H5a4 4 0 014-4V7zm12 0h-4a4 4 0 00-4 4v6h6v-6h-4a4 4 0 014-4V7z"/></svg>
-            </div>
-            <p>"The final product was not only functional, it was beautiful and memorable. Antony elevated our entire digital presence."</p>
-            <footer class="testimonial-author">
-              <img src="assets/imgs/avatar3.jpg" alt="" loading="lazy" width="40" height="40">
-              <div>
-                <cite>Emily M.</cite>
-                <span>Creative Lead</span>
-              </div>
-            </footer>
-          </blockquote>
+          <div class="process-card" data-anim="fade-up" data-delay="0.25">
+            <span class="process-step">04</span>
+            <h3>Improve</h3>
+            <p>Refine the system based on real usage, performance, and operational feedback to create long-term leverage.</p>
+          </div>
         </div>
       </div>
     </section>
 
     <div class="interactive-divider" data-shape="sphere"></div>
 
-    <!-- CONTACT -->
-    <section class="section section-dark" id="contact" aria-labelledby="contact-heading">
+    <section class="section" id="projects" aria-labelledby="projects-heading">
       <div class="container">
         <div class="section-label" data-anim="fade-up">
           <span class="label-number">05</span>
           <span class="label-line"></span>
+          <span>Selected work</span>
+        </div>
+
+        <h2 id="projects-heading" class="section-title" data-anim="fade-up" data-delay="0.1">Business-minded projects that combine engineering craft with real-world use.</h2>
+
+        <div class="projects-grid">
+          <a href="#" rel="noopener noreferrer" class="project-card" data-anim="fade-up" data-delay="0.1">
+            <div class="project-image">
+              <img src="assets/imgs/crm.png" alt="crm project" loading="lazy">
+              <div class="project-overlay"><span class="view-project">View Project</span></div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta"><span class="project-num">01</span><span class="project-type">Web Platform</span></div>
+              <h3>CRM</h3>
+              <div class="project-tags"><span>crm</span><span>Responsive</span><span>UX</span></div>
+            </div>
+          </a>
+
+          <a href="" rel="noopener noreferrer" class="project-card" data-anim="fade-up" data-delay="0.2">
+            <div class="project-image">
+              <img src="assets/imgs/hms.png" alt="hms" loading="lazy">
+              <div class="project-overlay"><span class="view-project">View Project</span></div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta"><span class="project-num">02</span><span class="project-type">Healthcare</span></div>
+              <h3>Hospital Management System </h3>
+              <div class="project-tags"><span>Trust UI</span><span>Healthtech</span><span>Access</span></div>
+            </div>
+          </a>
+
+          <a href=""  rel="noopener noreferrer" class="project-card" data-anim="fade-up" data-delay="0.3">
+            <div class="project-image">
+              <img src="assets/imgs/hrm.png" alt="hrm" loading="lazy">
+              <div class="project-overlay"><span class="view-project">View Project</span></div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta"><span class="project-num">03</span><span class="project-type">Human Resource</span></div>
+              <h3>Human Resource Management</h3>
+              <div class="project-tags"><span>HR</span><span>Payroll</span><span>Accounts</span></div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="testimonials" aria-labelledby="test-heading">
+      <div class="container">
+        <div class="section-label" data-anim="fade-up">
+          <span class="label-number">—</span>
+          <span class="label-line"></span>
+          <span>Proof</span>
+        </div>
+
+        <h2 id="test-heading" class="section-title" data-anim="fade-up" data-delay="0.1">Clients hire Tonium for clarity, execution, and measurable impact.</h2>
+
+        <div class="testimonials-row">
+          <blockquote class="testimonial-card" data-anim="fade-up" data-delay="0.15">
+            <div class="quote-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" opacity="0.15"><path d="M11 7H7a4 4 0 00-4 4v6h6v-6H5a4 4 0 014-4V7zm12 0h-4a4 4 0 00-4 4v6h6v-6h-4a4 4 0 014-4V7z"/></svg></div>
+            <p>"Tonium combines strong engineering judgment with a sharp eye for business process. He understands what a real operation needs, not just what looks good on the surface."</p>
+            <footer class="testimonial-author">
+              <img src="assets/imgs/avatar2.jpg" alt="" loading="lazy" width="40" height="40">
+              <div><cite>Jeremy K.</cite><span>Business Founder</span></div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card" data-anim="fade-up" data-delay="0.25">
+            <div class="quote-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" opacity="0.15"><path d="M11 7H7a4 4 0 00-4 4v6h6v-6H5a4 4 0 014-4V7zm12 0h-4a4 4 0 00-4 4v6h6v-6h-4a4 4 0 014-4V7z"/></svg></div>
+            <p>"Tonium brought structure, speed, and confidence to the project. The result was not only functional — it felt polished and trustworthy from day one."</p>
+            <footer class="testimonial-author">
+              <img src="assets/imgs/avatar3.jpg" alt="" loading="lazy" width="40" height="40">
+              <div><cite>Emily M.</cite><span>Creative Lead</span></div>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="section-label" data-anim="fade-up">
+          <span class="label-number">06</span>
+          <span class="label-line"></span>
           <span>Contact</span>
         </div>
+
         <div class="contact-layout">
           <div class="contact-info" data-anim="fade-up" data-delay="0.1">
-            <h2 id="contact-heading" class="section-title">Let's build something exceptional together.</h2>
-            <p>Available for freelance projects, product collaborations, and long-term engineering partnerships.</p>
+            <h2 id="contact-heading" class="section-title">Let's build the next system that improves how your business runs.</h2>
+            <p>Whether you need a digital transformation sprint, workflow automation, or practical AI-enabled systems, I can help you move from friction to scalable execution.</p>
+            <div class="contact-pills">
+              <span>Consulting</span>
+              <span>System modernization</span>
+              <span>Automation</span>
+              <span>AI workflows</span>
+            </div>
             <ul class="contact-links">
-              <li>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-                <a href="tel:+254719516641">+254 719 516 641</a>
-              </li>
-              <li>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                <a href="mailto:mutisya.antony@yahoo.com">mutisya.antony@yahoo.com</a>
-              </li>
-              <li>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-                <a href="https://www.linkedin.com/in/antony-mumo-mutisya" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
-              </li>
+              <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg><a href="tel:+254719516641">+254 719 516 641</a></li>
+              <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><a href="mailto:mutisya.antony@yahoo.com">mutisya.antony@yahoo.com</a></li>
+              <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg><a href="https://www.linkedin.com/in/antony-mumo-mutisya" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></li>
             </ul>
           </div>
+
           <form class="contact-form" id="contact-form" data-anim="fade-up" data-delay="0.2" novalidate>
             <div class="form-group">
               <input type="text" id="name" name="name" required placeholder=" " autocomplete="name">
@@ -439,10 +413,10 @@
             </div>
             <div class="form-group">
               <textarea id="message" name="message" rows="4" required placeholder=" "></textarea>
-              <label for="message">Your Message</label>
+              <label for="message">Tell me about your project</label>
             </div>
             <button type="submit" class="btn btn-fill magnetic">
-              <span>Send Message</span>
+              <span>Send inquiry</span>
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13"/><path d="M22 2L15 22l-4-9-9-4z"/></svg>
             </button>
             <p class="form-status" id="form-status" aria-live="polite"></p>
@@ -455,9 +429,7 @@
   <footer class="footer">
     <div class="container footer-inner">
       <p>&copy; <span id="year"></span> Tonium.tech. All rights reserved.</p>
-      <a href="#top" class="back-top magnetic">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
-      </a>
+      <a href="#top" class="back-top magnetic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg></a>
     </div>
   </footer>
 
@@ -469,3 +441,4 @@
   <script src="assets/js/scripts.js" defer></script>
 </body>
 </html>
+
