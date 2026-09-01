@@ -1,0 +1,589 @@
+Name / public name: My name is  Antony Mutisya (Tony) , but building a brand name called Tonium. It comes from the fusion of Tony and Tech..like the way you would have a chemical element liked vibranium, plutonium, platinum..to give a uniqie brand tech name that signifies digital transformation and tech evolution as well a unique tech name.
+Country: Kenya
+City/timezone: Nairobi, GMT +3
+Years coding professionally: 8
+Years coding total:10
+Current employment status: Self employed, consultant, freelance
+Current job title: full stack developer/engineer
+Current employer type: self employed
+Current monthly income: varies
+Current annual income: varies
+Target monthly income: 10k usd and higher
+Target annual income:200,000 usd
+Current savings/runway: lets say the plane will crash if it were to depend on this runway. its bad.
+Financial pressure level: low / medium / high. HIGH, VERY HIGH
+Hours available per week: I have all week
+Hours available on weekends: all weekend
+Preferred working hours: any time 
+Willingness to work US timezone: yes
+Willingness to work European timezone: yes
+Willingness to do sales: yes
+Willingness to cold email: yes
+Willingness to cold DM: yes
+Willingness to appear on video: yes
+Willingness to speak publicly: yes
+Willingness to write: yes
+Willingness to build open source: yes
+Willingness to freelance: yes
+Willingness to leave current job: yes
+
+
+
+LANGUAGES
+
+Python: 8
+JavaScript: 8
+TypeScript: 8
+Go: 3
+Rust:2
+Java:3
+C#: 1
+C/C++:1
+Other: comfortable and willing to learn new tech. i am a fast learner
+
+
+
+Frontend: 8
+Backend: 8
+APIs: 8
+Distributed systems: 8
+Cloud: 7
+AWS:7 
+GCP:7
+Azure:7
+Docker:7
+Kubernetes:5
+Terraform:5
+CI/CD:5
+Databases:8
+PostgreSQL:8
+Redis:7
+MongoDB:7
+Vector databases:4
+Data engineering:4
+AI/ML:4
+LLM applications:4
+RAG:4
+Agents:4
+AI infrastructure:5
+Security:5
+DevOps:5
+Observability:4
+System design:5
+Architecture:7
+Performance optimization:5
+Developer tooling:5
+Open source:4
+Testing:4
+Technical leadership:8
+Mentoring:8
+Product engineering:8
+
+Score each:
+1 = beginner
+5 = professional
+10 = exceptional
+
+What can I do significantly better than the average senior developer? i am highly creative, i think outside the box and can combine several skills at once.
+
+What problems do other engineers regularly ask me for help solving? creative direction and hacks
+
+BEST 10 PROJECTS
+
+Project: Hospital management system, human resource system, erp, crm, real estate system, payment gateways, ticketing systems, ecommerce systems, payroll and Financial systems, logistics apps, logbook apps
+Problem: digital transformation
+My role: developer, stratgeist, marketer, builder, engineer, implementer, basically everything
+Technologies: django, react,next, html, css js, docker , php, laravel, 
+Scale: beginner to medium
+Users: under 10
+Revenue impact: n/a
+Performance improvement: highly needed
+Cost reduction: potentially high
+Reliability improvement: potentially high
+Time saved: siginificant
+Technical difficulty: medium to moderate
+Interesting engineering decisions: scaling, and perfomance
+Public/private: both
+Can I discuss it publicly? yes
+Can I publish a case study? yes
+Can client/company name be disclosed? yes
+
+
+Major systems built: hrm, crm, hms, ticketing systems, real estate app, eccomerce
+Major migrations: yes, analouge to digital
+Major outages fixed: server outages
+Performance improvements: speed loading fixes
+Infrastructure improvements: yes, microservices and containers
+Security improvements: yes, rbac, and proxies, ssl
+Cost optimizations: ongoing
+Products launched:hrm, crm, hms, ticketing systems, real estate app, eccomerce
+Teams led: yes, engineering and tech and operations
+Engineers mentored: over 5
+Architecture decisions: ongoing
+Difficult technical problems solved: several
+Awards: none
+Certifications: yes, ai and programming
+Conference talks: none
+Articles: none
+Open-source contributions: not yet
+Notable employers: little app
+Notable clients: entrepreneurs
+Notable products:hrm, crm, hms, ticketing systems, real estate app, eccomerce
+
+
+
+Major technical failures: yes, apps have broken before
+Projects that didn't work: yes, complex 3d project
+Products abandoned: very many like a restaurant complex app
+Bad architectural decisions: deploying usng dev settings
+Lessons learned: follow best practices
+
+
+Personal website:
+GitHub:
+X:
+LinkedIn:
+Dev.to:
+Hashnode:
+Medium:
+YouTube:
+Newsletter:
+Other:
+
+X followers: under 30
+X impressions/month: under 500
+X engagement rate: under 500
+Typical likes: under 100
+Typical replies: 50 per week
+Best post:2k impressions
+Worst post: 10 impressions
+Existing audience: limited
+Email subscribers: none
+Website monthly traffic: under 100
+Google Search Console impressions: under 100
+GitHub followers: under 10
+GitHub stars: none
+Open-source contributions: none
+
+Former coworkers: under 5 
+Former managers: under 5
+Founders I know: a few
+CTOs I know: a few
+Engineering managers: a few
+Recruiters: a few
+Agency owners: a few
+VC contacts: none
+Startup founders:  a few 
+Developer advocates:  a few
+Open-source maintainers: none
+Communities: none
+Meetups: none
+Discords: none
+Slack groups: none 
+Professional associations: none
+
+
+Building SaaS: 10
+AI engineering: 10
+Infrastructure: 10
+Cloud: 10
+Developer tools: 10
+Backend: 10
+Frontend: 10
+Distributed systems: 10
+Security: 10
+Data: 10
+Fintech:10 
+Healthtech: 10
+E-commerce: 10
+Developer platfor ms: 10
+Enterprise software: 10
+Startups: 10
+Technical leadership: 10
+Architecture:10
+Performance:10
+Automation:10
+
+
+
+Target client geography:
+US:
+Canada:
+UK:
+EU:
+Middle East:
+Australia:
+Other:
+
+Preferred:
+Remote only:
+Remote + occasional travel:
+Willing to travel internationally:
+Maximum travel/month:
+
+Preferred client size: any
+Solo founder: yes
+
+Preferred company stage: any
+Pre-seed: yes
+Seed: yes 
+Series A: yes
+Series B: yes
+Growth: yes
+Enterprise: yes
+
+Preferred client type: local kenya and international
+Startup: yes
+SaaS: yes
+Agency: yes
+VC-backed startup: yes 
+Enterprise: yes 
+Developer tooling: yes
+Other: open
+
+
+comfortable charging any amount from 500usd to 50k +
+
+create repo such as:
+developer-growth-os/
+ put in 
+ /context/
+    profile.md
+    career.md
+    skills.md
+    projects.md
+    achievements.md
+    constraints.md
+    preferences.md
+    audience.md
+    network.md
+    financials.md
+    existing-assets.md
+
+/research/
+    competitors/
+    markets/
+    clients/
+    job-market/
+    content/
+    
+/strategy/
+    niche.md
+    positioning.md
+    offers.md
+    revenue-model.md
+    acquisition.md
+    content-strategy.md
+    seo.md
+    website.md
+
+/execution/
+    30-day.md
+    90-day.md
+    180-day.md
+    weekly-operating-system.md
+    daily-checklist.md
+
+/content/
+    ideas.md
+    pillars.md
+    calendar.md
+    templates.md
+
+/sales/
+    ICP.md
+    prospecting.md
+    outreach.md
+    discovery.md
+    proposals.md
+    followups.md
+    CRM.md
+
+/analytics/
+    KPI-dashboard.md
+    weekly-review.md
+    experiments.md
+
+/assets/
+    website/
+    case-studies/
+    github/
+    lead-magnets/
+
+
+
+add a master instruction file
+create a AGENTS.md
+Put your strategic rules there.
+
+For example:
+
+# Developer Growth Operating System
+
+## Primary objective
+
+Reach $10,000+/month in sustainable income from:
+1. High-ticket software consulting
+2. Fractional engineering leadership
+3. Advisory
+4. Remote senior engineering opportunities
+5. Software products
+
+## Constraints
+
+One person.
+15–20 hours/week.
+<$100/month initial budget.
+Kenya-based.
+International market.
+Long-term reputation matters.
+No vanity optimization.
+
+## Strategic principles
+
+Revenue > followers.
+
+Qualified leads > impressions.
+
+Proof > self-promotion.
+
+Owned assets > rented platforms.
+
+One niche > multiple niches.
+
+One primary offer > many offers.
+
+One primary acquisition channel > many channels.
+
+Evidence > assumptions.
+
+Experiments > opinions.
+
+Compounding assets > one-time activities.
+
+Never recommend an activity without identifying:
+- expected impact
+- time
+- cost
+- probability
+- KPI
+- compounding potential
+
+Never exceed 20 hours/week.
+
+Never add a new project without removing another.
+
+Always identify the current bottleneck.
+
+Prefer actions that can produce both revenue and authority.
+
+When uncertain, label the recommendation:
+EVIDENCE-SUPPORTED
+HEURISTIC
+SPECULATIVE
+
+
+You are not merely a strategist.
+
+You are my strategic operating system and execution manager.
+
+Your job is to continuously translate strategy into concrete work.
+
+Every recommendation must eventually become:
+
+Objective → project → milestone → task → deliverable → KPI → review → decision.
+
+Never give me a strategy without an execution mechanism.
+
+
+Every task generated should look like:
+
+TASK ID:
+Objective:
+Why this matters:
+Priority:
+Estimated time:
+Deadline:
+Dependencies:
+Exact actions:
+Deliverable:
+Definition of done:
+KPI:
+Expected result:
+Failure condition:
+Next action:
+
+Then you can literally work through the repository.
+
+ Add dependency management
+This is important for step-by-step execution.
+
+Tell it:
+
+Never assign a task before its prerequisites exist.
+
+Build a dependency graph.
+
+Example:
+
+Niche
+↓
+Positioning
+↓
+Offer
+↓
+Proof
+↓
+Website
+↓
+Prospect list
+↓
+Outreach
+↓
+Sales calls
+↓
+Client
+↓
+Case study
+↓
+Authority
+↓
+Higher prices
+
+Identify critical-path tasks and prevent premature work.
+
+This will eliminate a huge amount of wasted effort.
+
+Add a “don't build yet” rule
+This is particularly important for developers.
+
+Developers naturally want to build.
+
+Add:
+
+Do not recommend building software, SaaS, automation, websites, tools, or open-source projects unless the expected economic value exceeds the opportunity cost of selling.
+
+Before building anything, ask:
+
+Can this be validated manually?
+
+Can I sell it before building it?
+
+Can existing software solve 80% of it?
+
+Will this generate revenue, proof, distribution, or a strategic asset?
+
+If not, don't build it.
+
+This could save you hundreds of hours.
+
+
+And here's the most important part: don't ask Copilot to execute everything at once
+Give it a staged workflow.
+
+Stage 1 — Intelligence
+Prompt:
+
+Read /01_CONTEXT/.
+
+Conduct current market research.
+
+Do not create an execution plan yet.
+
+Determine:
+
+highest-value market
+highest-value buyer
+highest-value problem
+strongest niche
+strongest proof gap
+strongest acquisition opportunity
+largest strategic risk.
+Produce /02_RESEARCH/.
+
+Then review it.
+
+Stage 2 — Strategy
+Then:
+
+Read /01_CONTEXT/ and /02_RESEARCH/.
+
+Develop the economic strategy.
+
+Select exactly:
+
+one niche
+one ICP
+one core problem
+one primary offer
+one primary acquisition channel
+one primary content engine
+one owned-asset strategy.
+Produce /03_STRATEGY/.
+
+Do not create execution tasks yet.
+
+Review that.
+
+Stage 3 — Architecture
+Then:
+
+Convert the approved strategy into:
+
+sales system
+brand system
+content system
+website system
+SEO system
+GitHub/open-source system
+measurement system.
+Every system must connect to the revenue objective.
+
+Stage 4 — Execution
+Then:
+
+Convert the approved strategy into a dependency-aware 180-day execution roadmap.
+
+Every task must have:
+
+ID
+objective
+exact action
+time estimate
+dependency
+deliverable
+definition of done
+KPI
+expected business impact.
+Total weekly workload must remain between 15–20 hours.
+
+Stage 5 — Weekly operation
+This is where the system becomes really powerful.
+
+Every week:
+
+Read all current KPI data.
+
+Compare actual performance against the strategy.
+
+Identify the single largest bottleneck.
+
+Determine whether the bottleneck is:
+
+traffic
+leads
+sales
+pricing
+conversion
+delivery
+authority
+positioning.
+Reallocate next week's 15–20 hours.
+
+Generate the exact task list.
+
+Kill or defer low-ROI work.
+
+Update the experiment log.
+
+Do not redesign the entire strategy unless evidence warrants it.
