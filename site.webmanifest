@@ -1,0 +1,21 @@
+{
+  "name": "Tonium | Business Systems, Automation & AI Workflows",
+  "short_name": "Tonium",
+  "description": "Tonium helps growing teams modernize operations with business software, workflow automation, and practical AI systems.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0d17",
+  "theme_color": "#0a0d17",
+  "icons": [
+    {
+      "src": "/assets/imgs/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/imgs/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
