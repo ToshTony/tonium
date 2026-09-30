@@ -48,9 +48,9 @@ import * as THREE from "three";
   geo.setAttribute("color", new THREE.BufferAttribute(colors, 3));
   geo.setAttribute("aScale", new THREE.BufferAttribute(scales, 1));
 
-  function updateThemeColors(isLight) {
-    const accentColor = new THREE.Color(isLight ? 0x4f46e5 : 0x646cff);
-    const fadedColor = new THREE.Color(isLight ? 0xbac0cc : 0x2a2a3e);
+  function updateThemeColors() {
+    const accentColor = new THREE.Color(0x111111);
+    const fadedColor = new THREE.Color(0x8f8f88);
 
     for (let ix = 0; ix < cols; ix++) {
       for (let iz = 0; iz < rows; iz++) {
@@ -70,7 +70,7 @@ import * as THREE from "three";
   }
 
   // Initial color set
-  updateThemeColors(document.documentElement.getAttribute("data-theme") === "light");
+  updateThemeColors();
 
   /* ---- Shader Material ---- */
   const vertexShader = `
@@ -137,9 +137,9 @@ import * as THREE from "three";
 
   /* ---- Floating accent meshes ---- */
   const glowMat = new THREE.MeshBasicMaterial({
-    color: 0x646cff,
+    color: 0x111111,
     transparent: true,
-    opacity: 0.06,
+    opacity: 0.1,
   });
 
   const ring1 = new THREE.Mesh(
@@ -154,7 +154,7 @@ import * as THREE from "three";
     new THREE.TorusGeometry(6, 0.015, 16, 120),
     glowMat.clone()
   );
-  ring2.material.opacity = 0.03;
+  ring2.material.opacity = 0.05;
   ring2.position.set(0, 0, -3);
   ring2.rotation.x = Math.PI / 3;
   scene.add(ring2);
@@ -213,13 +213,5 @@ import * as THREE from "three";
   }
 
   
-  window.addEventListener("themeChanged", (e) => {
-    const isLight = e.detail.isLight;
-    updateThemeColors(isLight);
-    mat.blending = isLight ? THREE.NormalBlending : THREE.AdditiveBlending;
-    mat.needsUpdate = true;
-    glowMat.color.set(isLight ? 0x222222 : 0x646cff);
-    glowMat.opacity = isLight ? 0.04 : 0.06;
-  });
   tick();
 })();

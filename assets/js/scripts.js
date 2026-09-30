@@ -1,38 +1,6 @@
 (function () {
   "use strict";
 
- /* =====================================
-   THEME TOGGLE
-   ===================================== */
-const themeToggle = document.getElementById("theme-toggle");
-
-function applyTheme(isLight) {
-  if (isLight) {
-    document.documentElement.setAttribute("data-theme", "light");
-    localStorage.setItem("theme", "light");
-  } else {
-    document.documentElement.removeAttribute("data-theme");
-    localStorage.setItem("theme", "dark");
-  }
-
-  window.dispatchEvent(
-    new CustomEvent("themeChanged", { detail: { isLight } })
-  );
-}
-
-// Default to DARK mode unless user explicitly chose light mode
-const savedTheme = localStorage.getItem("theme");
-let isLightMode = savedTheme === "light";
-
-applyTheme(isLightMode);
-
-if (themeToggle) {
-  themeToggle.addEventListener("click", () => {
-    isLightMode = !isLightMode;
-    applyTheme(isLightMode);
-  });
-}
-
   /* =====================================
      LOADER
      ===================================== */
@@ -67,14 +35,14 @@ if (themeToggle) {
     navToggle.addEventListener("click", () => {
       const isExpanded = navToggle.getAttribute("aria-expanded") === "true";
       navToggle.setAttribute("aria-expanded", !isExpanded);
-      navMenu.classList.toggle("active");
+      navMenu.classList.toggle("open");
     });
 
     // Close menu when clicking a link
     navMenu.querySelectorAll(".nav-link").forEach(link => {
       link.addEventListener("click", () => {
         navToggle.setAttribute("aria-expanded", "false");
-        navMenu.classList.remove("active");
+        navMenu.classList.remove("open");
       });
     });
   }
@@ -163,9 +131,10 @@ if (themeToggle) {
     const tl = gsap.timeline({ delay: 1 });
 
     tl.to(".hero-label", { opacity: 1, duration: 0.8, y: 0 })
-      .to(".hero-title .line", { y: 0, opacity: 1, duration: 1, stagger: 0.15, ease: "power3.out" }, "-=0.4")
+      .to(".hero-title .title-line .word", { y: 0, opacity: 1, duration: 1, stagger: 0.15, ease: "power3.out" }, "-=0.4")
       .to(".hero-desc", { opacity: 1, y: 0, duration: 0.8 }, "-=0.6")
-      .to(".hero .btn", { opacity: 1, y: 0, duration: 0.5, stagger: 0.1 }, "-=0.4");
+      .to(".hero .btn", { opacity: 1, y: 0, duration: 0.5, stagger: 0.1 }, "-=0.4")
+      .to(".hero-scroll", { opacity: 1, y: 0, duration: 0.6 }, "-=0.25");
 
     gsap.to("#hero-canvas", {
       yPercent: 30,

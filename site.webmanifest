@@ -4,8 +4,8 @@
   "description": "Tonium helps growing teams modernize operations with business software, workflow automation, and practical AI systems.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#0a0d17",
-  "theme_color": "#0a0d17",
+  "background_color": "#f6f6f3",
+  "theme_color": "#f6f6f3",
   "icons": [
     {
       "src": "/assets/imgs/favicon-32x32.png",

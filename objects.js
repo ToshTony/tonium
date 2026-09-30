@@ -6,7 +6,7 @@ import * as THREE from "three";
 
   const scenes = [];
 
-  let isLight = document.documentElement.getAttribute("data-theme") === "light";
+  const isLight = true;
 
   /* ---- Visibility-gated rendering ---- */
   const visObs = new IntersectionObserver(
@@ -50,7 +50,7 @@ import * as THREE from "three";
     const dir = new THREE.DirectionalLight(0xffffff, isLight ? 1.8 : 1);
     dir.position.set(4, 6, 5);
     scene.add(dir);
-    const accent = new THREE.PointLight(isLight ? 0x4338ca : 0x646cff, 2.5, 20);
+    const accent = new THREE.PointLight(0x111111, 2.5, 20);
     accent.position.set(-4, -3, 4);
     scene.add(accent);
 
@@ -82,8 +82,8 @@ import * as THREE from "three";
     /* Material */
     const isWire = shape === "icosahedron" || shape === "octahedron";
     const mat = new THREE.MeshPhysicalMaterial({
-      color: isLight ? 0x4338ca : 0x646cff,
-      emissive: isLight ? 0x3730a3 : 0x1e1b4b,
+      color: 0x111111,
+      emissive: 0x555550,
       emissiveIntensity: 0.15,
       metalness: isWire ? 0.2 : 0.7,
       roughness: isWire ? 0.6 : 0.15,
@@ -165,19 +165,6 @@ import * as THREE from "three";
       s.renderer.setSize(w, h);
       s.cam.aspect = w / h;
       s.cam.updateProjectionMatrix();
-    });
-  });
-
-  /* ---- Theme change ---- */
-  window.addEventListener("themeChanged", (e) => {
-    isLight = e.detail.isLight;
-    scenes.forEach((s) => {
-      s.amb.intensity = isLight ? 1.2 : 0.45;
-      s.dir.intensity = isLight ? 1.8 : 1;
-      s.accent.color.setHex(isLight ? 0x4338ca : 0x646cff);
-      s.mat.color.setHex(isLight ? 0x4338ca : 0x646cff);
-      s.mat.emissive.setHex(isLight ? 0x3730a3 : 0x1e1b4b);
-      s.mat.needsUpdate = true;
     });
   });
 
