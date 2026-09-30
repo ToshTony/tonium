@@ -80,18 +80,18 @@ import * as THREE from "three";
     }
 
     /* Material */
-    const isWire = shape === "icosahedron" || shape === "octahedron";
+    const isWire = shape === "sphere" || shape === "torus" || shape === "icosahedron" || shape === "octahedron";
     const mat = new THREE.MeshPhysicalMaterial({
       color: 0x111111,
       emissive: 0x555550,
       emissiveIntensity: 0.15,
-      metalness: isWire ? 0.2 : 0.7,
-      roughness: isWire ? 0.6 : 0.15,
+      metalness: isWire ? 0.1 : 0.7,
+      roughness: isWire ? 0.45 : 0.15,
       wireframe: isWire,
       clearcoat: isWire ? 0 : 1,
       clearcoatRoughness: 0.1,
       transparent: shape === "sphere" || shape === "torus",
-      opacity: shape === "sphere" || shape === "torus" ? 0.88 : 1,
+      opacity: isWire ? 0.78 : 1,
     });
 
     const mesh = new THREE.Mesh(geo, mat);

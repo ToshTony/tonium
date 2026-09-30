@@ -1,5 +1,303 @@
 # TONIUM — Master Brand & Build Prompt
 
+> **DOCUMENT STATUS: CURRENT SOURCE OF TRUTH**
+>
+> This document was updated on 2026-09-30 to reflect the current implementation and the next Tonium website phases. Status labels are intentional: **IMPLEMENTED**, **IN PROGRESS**, **PLANNED**, **BLOCKED**, and **DEPRECATED**. The older build specification remains below as historical context and must not override the current-state sections.
+
+## 0. Current Tonium Direction
+
+### North star
+
+Tonium is a premium technical consultancy and technology/creator ecosystem focused on business value, trust, proof, systems, technical capability, and conversion.
+
+The brand sits at the intersection of:
+
+- Technical consulting and digital transformation
+- Business systems, digital products, and infrastructure
+- Automation, AI-enabled workflows, and operational leverage
+- Creative technology, 3D visualization, and premium digital experiences
+- Content, authority, creator work, and long-term business development
+
+The intended perception is **premium technical intelligence with a distinctive creative and technological identity**. Tonium must feel more capable than a commodity digital agency without becoming a generic corporate consultancy.
+
+### Strategic priorities
+
+1. Communicate what Tonium does quickly and clearly.
+2. Make high-intent services discoverable without bloating the homepage.
+3. Use 3D and motion to create identity, not distraction.
+4. Replace unsupported capability claims with proof over time.
+5. Turn the website into an owned hub for services, content, proof, authority, and conversion.
+
+### Status vocabulary
+
+- **IMPLEMENTED:** Confirmed in the current codebase.
+- **IN PROGRESS:** Partially implemented or undergoing refinement.
+- **PLANNED:** Agreed direction not yet built.
+- **BLOCKED:** Requires information, assets, access, or a decision before implementation.
+- **DEPRECATED:** Historical direction that should not guide new work.
+
+## 1. Original Strategic Direction
+
+Tonium began as a premium personal technology brand for Antony “Tony” Mutisya. The original vision combined software engineering, creative technology, experimentation, content, AI tools, systems thinking, and a creator ecosystem under one memorable identity.
+
+The long-term commercial objective remains to create sustainable income through high-value software consulting, fractional technical leadership, advisory work, remote senior opportunities, and eventually products or a software studio. The revenue-first operating rules remain:
+
+- Revenue and qualified leads over vanity metrics.
+- Proof over self-promotion.
+- Owned assets over rented platforms.
+- One clear primary positioning before expanding the ecosystem.
+- Experiments must have a measurable purpose.
+- New builds must justify their opportunity cost against selling and proving existing capability.
+
+The original “precious element” metaphor remains useful as brand mythology, but current customer-facing communication should lead with concrete systems, products, outcomes, and technical capability.
+
+## 2. Implemented Website State
+
+**Status: IMPLEMENTED / IN PROGRESS**
+
+The active website is a static HTML/CSS/JavaScript experience designed for `tonium.tech`. The current implementation is defined by:
+
+- [index.html](index.html) for structure, copy, metadata, and JSON-LD.
+- [assets/css/styles.css](assets/css/styles.css) for the active design system and responsive layout.
+- [assets/js/scripts.js](assets/js/scripts.js) for navigation, scrolling, reveals, cursor behavior, and hero interaction.
+- [3d.js](3d.js) for the hero particle field and rings.
+- [objects.js](objects.js) for interactive Three.js section dividers.
+
+The homepage currently communicates:
+
+- Hero: businesses can modernize operations with software that works.
+- About: Tonium turns business friction into scalable digital systems.
+- Services: digital products, web applications, app development, SEO/performance, workflow automation/AI, and transformation/technical strategy.
+- Case studies: healthcare operations, ERP/HRM/CRM systems, and automation tooling.
+- Process: diagnose, design, build, improve.
+- Selected work: CRM, hospital management, and HRM systems.
+- Proof: testimonials and qualitative capability statements.
+- Contact: discovery and project inquiries.
+
+### Confirmed design changes
+
+- **IMPLEMENTED:** Single premium light theme; the theme toggle and runtime theme switching were removed.
+- **IMPLEMENTED:** Monochrome visual system based on black, white, off-white, charcoal, graphite, and neutral grey.
+- **IMPLEMENTED:** Existing copy, sections, 3D architecture, and navigation were preserved while the hero and services were refined.
+- **IMPLEMENTED:** Hero content is visible without depending on external GSAP loading.
+- **IMPLEMENTED:** Hero composition is compact enough to fit tested 1440x900 desktop and 390x844 mobile viewports.
+- **IMPLEMENTED:** Explore control is a centered, keyboard-accessible link to the About section with a restrained orbital/wireframe CSS object.
+- **IMPLEMENTED:** Sphere and torus divider objects use monochrome wireframe materials in [objects.js](objects.js).
+- **IMPLEMENTED:** Existing 3D particle and divider systems remain active; no new rendering library was added.
+- **IMPLEMENTED:** Mobile navigation uses the CSS class expected by the responsive menu.
+- **IMPLEMENTED:** Hero and 3D module syntax, manifest JSON, browser rendering, viewport fit, and horizontal overflow were validated locally.
+
+### Current visual rules
+
+- Typography: Inter for readable body copy and Space Grotesk for display hierarchy.
+- Surfaces: white, off-white, transparent glass, and graphite contrast moments.
+- Borders: fine and controlled.
+- Shadows: soft, restrained, and used to establish material depth.
+- Radius: consistent, restrained rounding rather than excessive pill-shaped UI.
+- Motion: purposeful 3D movement, subtle interaction states, and restrained reveals.
+- Glass: selective material treatment for navigation, floating controls, cards, and supporting interfaces.
+- 3D: geometric, monochrome, technically expressive, and subordinate to the message.
+- Layout: compact but breathable, with high information density and low cognitive load.
+
+### Current hero system
+
+The hero hierarchy is:
+
+1. Positioning label
+2. Core business-value headline
+3. Supporting context
+4. Primary discovery/contact actions
+5. Impact summary
+6. Centered Explore interaction
+
+Motion hierarchy:
+
+- Primary: hero particle field and geometric 3D objects.
+- Secondary: Explore/orbital interaction.
+- Micro: buttons and interactive surfaces.
+- Static: core typography and business message.
+
+The Explore control must remain an accessible link, retain visible focus, support touch and keyboard use, and respect reduced-motion behavior.
+
+## 3. Current Service and Information Architecture
+
+**Status: IMPLEMENTED / IN PROGRESS**
+
+The existing Services section is the correct homepage location for initial service discovery. No duplicate service section should be added unless the information architecture changes materially.
+
+Current service groups:
+
+- **Websites & digital products:** business websites and digital experiences.
+- **Web applications & internal tools:** operational platforms, management systems, and internal software.
+- **Mobile & application development:** application experiences built around validated products or workflows.
+- **SEO & digital performance:** technical foundations, search visibility, site speed, and conversion paths.
+- **Workflow automation & AI:** process design, integrations, repetitive-work reduction, and practical AI systems.
+- **Transformation & technical strategy:** legacy modernization, architecture, migration, and implementation guidance.
+
+These offerings must be positioned as part of Tonium’s broader technical capability, not as a low-cost “we build websites” menu. The intended journey is:
+
+`Homepage -> Service -> Problem -> Solution -> Proof -> CTA`
+
+Future high-intent service routes may include:
+
+- `/web-development`
+- `/web-applications`
+- `/app-development`
+- `/seo`
+- `/digital-products`
+- `/technical-consultancy`
+- `/systems-automation`
+
+**Status: PLANNED.** Do not create thin keyword pages. Each future page must explain the client problem, approach, relevant capability, evidence, expected outcome, and next action.
+
+SEO is part of the chain **technical foundation -> search visibility -> discovery -> acquisition -> conversion**. Avoid ranking guarantees and disconnected marketing language.
+
+## 4. Proof, Content, and Conversion
+
+### Proof system
+
+**Status: PLANNED**
+
+The main strategic gap is evidence depth, not technical breadth. Build proof through:
+
+- Detailed case studies with problem, role, solution, decisions, and verified outcomes.
+- Named testimonials where permission exists, or clearly labelled anonymized evidence.
+- Before/after workflow or performance comparisons.
+- Technical demonstrations and implementation notes.
+- Verified metrics, certifications, partnerships, and public work where applicable.
+
+Move the brand from “we can do this” to “here is evidence that we did this.”
+
+### Content engine
+
+**Status: PLANNED**
+
+The website should become the source of truth for content around:
+
+- Technical insight and architecture
+- Business systems and digital products
+- Web and app engineering
+- SEO, performance, and discoverability
+- Automation and AI workflows
+- Digital transformation
+- Case studies, experiments, and lessons learned
+- Technical leadership and creator technology
+
+One strong idea should be adapted into an article, newsletter entry, social post, technical note, and relevant distribution assets. Content exists to create authority, discovery, trust, traffic, and conversion.
+
+### Conversion system
+
+**Status: IN PROGRESS / PLANNED**
+
+The current homepage has clear primary CTAs and contact paths. Remaining work includes:
+
+- A reliable form delivery endpoint rather than depending only on browser mail behavior.
+- Service-specific CTAs.
+- A systems-audit or discovery offer.
+- Lead qualification and follow-up.
+- Newsletter or resource capture.
+- Analytics events for CTA clicks, service exploration, scroll depth, and inquiries.
+
+## 5. Next Implementation Roadmap
+
+### Phase 1 — Core visual system
+
+**Status: IN PROGRESS**
+
+Finalize reusable tokens and patterns for monochrome colors, typography, spacing, buttons, cards, glass surfaces, borders, shadows, motion, 3D containers, and responsive behavior. Remove stale legacy theme rules once the current system is stable.
+
+### Phase 2 — Hero completion
+
+**Status: IN PROGRESS**
+
+Complete the three-second understanding test, validate wireframe visibility across devices, refine sphere and torus motion, test reduced-motion behavior, and confirm WebGL performance on lower-powered devices.
+
+### Phase 3 — Service architecture
+
+**Status: IMPLEMENTED FOUNDATION / PLANNED EXPANSION**
+
+The homepage now surfaces websites, web applications, applications, SEO/performance, automation, and technical strategy. Next, decide which high-intent offers deserve dedicated pages based on proof and demand rather than creating every possible route.
+
+### Phase 4 — Trust and proof
+
+**Status: PLANNED**
+
+Publish three detailed case studies first, prioritizing healthcare operations, business systems, and automation. Use verified outcomes and disclose when work is anonymized.
+
+### Phase 5 — Process and methodology
+
+**Status: PLANNED**
+
+Document the real delivery method. A possible model is `Understand -> Strategize -> Design -> Build -> Optimize -> Grow`, but the final labels must reflect actual Tonium practice.
+
+### Phase 6 — Service pages
+
+**Status: PLANNED**
+
+Create only the service pages that have a clear buyer, problem, offer, proof, and CTA. Use service pages for conversion and organic search, not thin keyword coverage.
+
+### Phase 7 — Content and distribution
+
+**Status: PLANNED**
+
+Launch an insights/content system, then distribute useful work through relevant channels while keeping the website as the owned destination. The operating loop is `Create -> Adapt -> Distribute -> Capture -> Nurture -> Convert`.
+
+### Phase 8 — Creator ecosystem
+
+**Status: PLANNED**
+
+Expand into projects, experiments, technical showcases, tutorials, resources, collaborations, and community only when each component supports authority, proof, distribution, or revenue.
+
+### Phase 9 — Measurement
+
+**Status: PLANNED**
+
+Track acquisition, engagement, conversion, and business outcomes: organic and referral traffic, hero interaction, scroll depth, service views, case-study engagement, CTA clicks, qualified inquiries, opportunities, clients, and revenue attribution where practical.
+
+## 6. Masterplan Architecture
+
+```text
+TONIUM BRAND
+   |
+   v
+WEBSITE HUB
+   |
+   +--> SERVICES --> CLIENTS
+   |
+   +--> CONTENT --> AUTHORITY
+   |
+   +--> PROOF ----> TRUST
+            |
+            v
+          CREATOR ECOSYSTEM
+            |
+            v
+          COMMUNITY
+            |
+            v
+            GROWTH
+```
+
+The website is the central owned platform connecting expertise, services, proof, content, creators, and conversion. Future work should move visitors through:
+
+`Attention -> Context -> Understanding -> Capabilities -> Trust -> Proof -> Desire -> Action`
+
+## 7. Documentation Maintenance Rules
+
+This file is a living source of truth. For every significant change:
+
+1. Update the relevant current-state section.
+2. Record the implementation status.
+3. Record strategic reasoning where it affects future work.
+4. Move completed roadmap items out of pending work.
+5. Record dependencies, blockers, and unresolved decisions.
+6. Mark conflicting legacy guidance as deprecated rather than silently preserving it.
+7. Never claim a feature is implemented without confirming it in the codebase.
+
+## 8. Historical Specification Notice
+
+The sections below preserve the original Tonium build prompt, element metaphor, early light-theme design system, and initial migration roadmap. They are useful historical context, but parts of them are now **DEPRECATED** or **SUPERSEDED** by the current sections above. In particular, the older claims about a light theme with green/purple/pink accents, theme switching, broad portfolio structure, and earlier experience/project metrics must not override the current monochrome light implementation or current verified business positioning.
+
 **Project:** Tonium (To) — Premium Personal Tech Brand for Tony Mutisya  
 **Status:** Production-Ready Light Theme with Precious Element Positioning  
 **Created:** June 2026 | **Type:** Static HTML/CSS/JS → Next.js Migration Path
